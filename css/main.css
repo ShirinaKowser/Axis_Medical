@@ -32,12 +32,12 @@ html {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
+ ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
 }
 
-::selection {
+ ::selection {
     background: #b3d4fc;
     text-shadow: none;
 }
@@ -476,6 +476,115 @@ ol {
 
 
 /*about_section css end*/
+
+
+/*timeline_section_header css start*/
+
+#time_line_header {}
+
+.logo_title {
+    padding: 10px 0px;
+}
+
+.logo_title a img {
+    width: 203px;
+    height: 70px;
+}
+
+.purchase_button {
+    padding: 25px 0px;
+    float: right;
+}
+
+.purchase_button .button {
+    background-color: #FF1100;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: .025em;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+.purchase_button .button:hover {
+    background: green;
+}
+
+
+/*timeline_section_header css end*/
+
+
+/*timeline_section css start*/
+
+#timeline_section {
+    background-image: url("https://timeline.themesawesome.com/wp-content/uploads/sites/134/2020/08/kMKWRy_t20_JaL8ek.jpg");
+    height: 400px;
+    background-size: cover;
+    padding: 100px 0px;
+    position: relative;
+    z-index: 10;
+}
+
+#timeline_section::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #191970;
+    opacity: 0.95;
+    z-index: -10;
+}
+
+.elementor-shape[data-negative=false].elementor-shape-bottom {
+    transform: rotate(180deg);
+}
+
+.elementor-shape {
+    position: relative;
+    width: 100%;
+}
+
+.elementor-shape svg {
+    display: block;
+    width: calc(100% + 1.3px);
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.elementor-shape-bottom .elementor-shape-fill {
+    fill: #EDF2F4;
+    transform-origin: center;
+    transform: rotateY(0deg);
+    opacity: 0.66;
+}
+
+.elementor-shape-bottom svg {
+    height: 150px;
+}
+
+.timeline_content h1 {
+    color: #FFFFFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.timeline_content p {
+    color: #FFFFFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/*timeline_section css end*/
 
 
 /* popular_section css start*/
@@ -1292,6 +1401,58 @@ ol {
 
 
 /* footer bottom css finish*/
+
+#fixed_footer_bottom {
+    background-color: #3f198a;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background: linear-gradient(135deg, #ff2c54 30%, #9c5fff 100%);
+}
+
+.epib-btn:first-child {
+    background: #ffd700;
+}
+
+.footer_bottom_left p {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: .2px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 15px;
+}
+
+.footer_bottom_right a {
+    text-decoration: none;
+}
+
+.epib-btn {
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    transition: all .3s ease-in-out .0s;
+    font-size: 18px;
+    border-radius: 3px;
+    letter-spacing: .5px;
+    display: inline-block;
+    line-height: 1;
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.epib-btn:hover {
+    background: black;
+    color: white;
+}
 
 
 /* ==========================================================================
